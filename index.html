@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Diário Completo</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Diário Completo" content="DOERJ completo e com todas as páginas" />
+  <meta name="description" content="Diário Oficial do Estado do Rio de Janeiro em um arquivo único, com todas as páginas, de maneira rápida e fácil."/>
+  <meta name="keywords" content="DOERJ, Diário Oficial do Estado do Rio de Janeiro, diário oficial rio de janeiro, diário oficial do estado do rio de janeiro, como consultar publicação no diário oficial do rio de janeiro, como consultar diário oficial antigo do rio de janeiro, como fazer busca no diário oficial do rio de janeiro, diario oficial do rio de janeiro, diário oficial rj, diário oficial, publicação diario oficial, ioerj diário oficial"/>
+  <meta name="author" content="Diário Completo" />
+  <meta name="URL" content="https://www.diariocompleto.com.br/"/>
+  <meta http-equiv="content-language" content="pt-br" />
+  <meta name="robots" content="index, follow"/>
+
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/components/title.css">
+  <link rel="stylesheet" href="./css/components/description.css">
+  <link rel="stylesheet" href="./css/components/button.css">
+  <link rel="stylesheet" href="./css/components/header.css">
+  <link rel="stylesheet" href="./css/components/banner.css">
+  <link rel="stylesheet" href="./css/components/about.css">
+  <link rel="stylesheet" href="./css/components/articles.css">
+  <link rel="stylesheet" href="./css/components/footer.css">
+  <link rel="stylesheet" href="./css/animation.css">
+  <link rel="stylesheet" href="./css/responsiveness.css">
+  <link rel="stylesheet" href="./css/components/form.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>
+        <img class="coracao" src="./assets/images/coracao.png" alt="DOERJ">  DIÁRIO COMPLETO
+      </h1>
+
+      <nav>
+        <a class="header__menu-mobile" href="#">
+          <img class="header__icon" src="./assets/images/icon-hamburger.svg" alt="Icon menu">
+        </a>
+
+        <ul data-js="header-items" class="header__items">
+          <li class="header__item">
+            <a class="header__link" href="#">Início</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#about">Por que ?</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#Contato">Contato</a>
+          </li>          
+        </ul>
+      </nav>
+
+      <a class="button" href="https://t.me/+aCE9aABLC4hmYzA5" target="_blank">Entre no Grupo</a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <div class="container">
+      <div class="banner__cta">
+       <h2 class="title title--big">DOERJ completo, rápido e sem enrolação</h2>
+        <br>
+        <p class="description">Escolha o caderno de sua preferência e faça o download.</p>
+        <p class="description">Última atualização: <b><span id="day"></span></p></b>
+       
+        <div class="select">
+          <select name="select" id="select" style="margin-top: 0" onchange="selectFile(this)">
+            <option selected disabled>Selecione um caderno...</option>
+            <option value="Executivo">Executivo</option>
+            <option value="Tribunal de Contas">Tribunal de Contas</option>
+            <option value="Legislativo">Legislativo</option>
+            <option value="Municipalidades">Municipalidades</option>
+            <option value="Publicação a Pedidos">Publicação a Pedidos</option>
+          </select>
+          <input type="submit" class="button" value="Download " onclick="download()">
+        </div>
+
+       
+
+      </div>
+
+      <div class="banner__imagem">
+        <img class="banner__img" src="./assets/images/main_dog.svg" alt="Mockups">
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container">
+      <div class="about__heading" id="about">
+        <h2 class="title title--normal">Por que o Diário Completo ?</h2>
+        <p class="description">A ideia desse site é disponibilizar o diário oficial do Estado do Rio de Janeiro em um arquivo único, com todas as páginas, de maneira rápida e fácil. Entre no grupo do WhatsApp e receba também os arquivos de forma automática, assim que eles forem disponibilizados no site oficial.</p>
+      </div>
+
+      <div class="about__content grid">
+        <article class="articles__article--bg">
+          <img class="about__img" src="./assets/images/completo.png" alt="Icon online">
+          <h3 class="about__article-title title title--small">Completo</h3>
+          <p class="description">Um único arquivo com todas as páginas. Não precisa mais baixar uma por uma e depois juntar todas.
+            Fazemos isso pra você.</p>
+        </article>
+
+        <article>
+          <img class="about__img" src="./assets/images/rapido.png" alt="Icon budgeting">
+          <h3 class="about__article-title title title--small">Simples e Rápido</h3>
+          <p class="description">Escolha o caderno na página inicial do site e baixe. Pronto ! É só isso...</p>
+        </article>
+
+        <article>
+          <img class="about__img" src="./assets/images/zap.png" alt="Icon onboarding">
+          <h3 class="about__article-title title title--small">Receba no zap</h3>
+          <p class="description">Entre no grupo do WhatsApp e receba os cadernos assim que estiverem disponíveis no site oficial.</p>
+        </article>
+
+        <article>
+          <img class="about__img" src="./assets/images/ajuda.png" alt="Icon API">
+          <h3 class="about__article-title title title--small">Queremos ajudar</h3>
+          <p class="description">Faça parte do nosso grupo do WhatsApp para nos dizer como podemos-lhe ajudar e melhorar a sua 
+            experiência e nossas funcionalidades.</p>
+        </article>
+
+      </div>
+      <br>
+      <br>
+      
+      <a class="button" href="https://t.me/+aCE9aABLC4hmYzA5" target="_blank">Entre no Grupo</a>
+    
+    </div>
+  </section>
+
+  
+  
+   
+    <div class="container-form">
+
+      <h2 class="title-form">Entre em Contato e tire suas dúvidas</h2><br>
+
+      <div class="form_box">
+        <form class="form" action="enviarDados.php" method="post">
+      
+          <div class="input-box">
+              <label>Nome completo</label>
+              <input type="text" name="nome" placeholder="Digite seu nome" required="" >
+          </div>
+          
+          <div class="column">
+          
+              <div class="input-box">
+                <label>E-mail</label>
+                <input type="email" name="email" placeholder="Digite seu e-mail" required="" >
+              </div>
+          
+              <div class="input-box">
+                <label>Telefone</label>
+                <input type="text" name="telefone" placeholder="Digite seu telefone" required="">
+              </div>
+          
+          </div>
+          
+          
+            
+            <label class="naoexibir">
+                <span>Não preencher:</span><br>
+                <input type="text" name="url" value=""></p>
+            </label> 
+            
+            <div class="input-box">
+              <label>Assunto</label> 
+              <textarea name="mensagem" cols="30" rows="3" placeholder="Sobre o que você gostaria de falar" required></textarea>
+            </div>
+          
+          <button>Enviar Dados</button>
+      
+        </form>
+        
+      </div>
+
+    </div>
+   
+  <footer class="footer">
+    
+     <nav class="footer__nav container">
+      
+      <div class="column" id="Contato">
+          <h2>
+            <img class="coracao" src="./assets/images/coracao.png" alt="DOERJ">  DIÁRIO COMPLETO
+          </h2>
+      </div>
+
+      <div class="column">
+        <li><a class="footer__link" href="https://wa.me//5521998257880?text=Quero%20entrar%20no%20grupo" target="_blank">Contato: 21 99825-7880</a></li>
+      </div>
+
+      <div class="column">
+        <a class="button" href="https://t.me/+aCE9aABLC4hmYzA5" target="_blank">Entre no Grupo</a>
+      </div>
+    </nav>
+
+  </footer>  
+
+
+    
+  <script src="js/jquery.js"></script>
+  <script src="js/script.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
